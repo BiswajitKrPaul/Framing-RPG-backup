@@ -77,6 +77,70 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: 1566129033, guid: 9296c7cd0beafe24f9d835ac2afeacf3, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 2
+  - m_Name: idle_left_hoe
+    m_Hash: 730832642
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: player_with_hoe_universal_80
+      m_Hash: 322175525
+      m_Sprite: {fileID: 442158831, guid: d3ba47edee8bbb54d97097b5a235144d, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 442158831, guid: d3ba47edee8bbb54d97097b5a235144d, type: 3}
+    - m_Name: player_with_hoe_universal_81
+      m_Hash: 607335091
+      m_Sprite: {fileID: -803416440, guid: d3ba47edee8bbb54d97097b5a235144d, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -803416440, guid: d3ba47edee8bbb54d97097b5a235144d, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: idle_right_hoe
+    m_Hash: 79491347
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: player_with_hoe_universal_102
+      m_Hash: 512976327
+      m_Sprite: {fileID: -1062876883, guid: d3ba47edee8bbb54d97097b5a235144d, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1062876883, guid: d3ba47edee8bbb54d97097b5a235144d, type: 3}
+    - m_Name: player_with_hoe_universal_103
+      m_Hash: 697587025
+      m_Sprite: {fileID: -1310057051, guid: d3ba47edee8bbb54d97097b5a235144d, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1310057051, guid: d3ba47edee8bbb54d97097b5a235144d, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: idle_up_hoe
+    m_Hash: 133817092
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: player_with_hoe_universal_69
+      m_Hash: 879466255
+      m_Sprite: {fileID: -549154727, guid: d3ba47edee8bbb54d97097b5a235144d, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -549154727, guid: d3ba47edee8bbb54d97097b5a235144d, type: 3}
+    - m_Name: player_with_hoe_universal_70
+      m_Hash: 346824426
+      m_Sprite: {fileID: 2017698323, guid: d3ba47edee8bbb54d97097b5a235144d, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2017698323, guid: d3ba47edee8bbb54d97097b5a235144d, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: idle_down_hoe
+    m_Hash: 1052804580
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: player_with_hoe_universal_91
+      m_Hash: 1026032626
+      m_Sprite: {fileID: 1841193044, guid: d3ba47edee8bbb54d97097b5a235144d, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1841193044, guid: d3ba47edee8bbb54d97097b5a235144d, type: 3}
+    - m_Name: player_with_hoe_universal_92
+      m_Hash: 606163528
+      m_Sprite: {fileID: 1991058587, guid: d3ba47edee8bbb54d97097b5a235144d, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1991058587, guid: d3ba47edee8bbb54d97097b5a235144d, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638649681479614151
+  m_ModificationHash: 638649710428415706
   m_Version: 1
