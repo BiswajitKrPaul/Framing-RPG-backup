@@ -14,7 +14,7 @@ AnimatorStateMachine:
     m_Position: {x: 460, y: -10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5801904893699562903}
-    m_Position: {x: 490, y: 160, z: 0}
+    m_Position: {x: 450, y: 150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2653501083317991336}
     m_Position: {x: 180, y: 100, z: 0}
@@ -427,9 +427,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 6
     m_ConditionEvent: weaponType
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: isWalking
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3316283177719189354}
   m_Solo: 0
@@ -496,23 +493,6 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1109 &568090623621329201
-AnimatorTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: idle
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 2653501083317991336}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 1
 --- !u!1101 &774638028335949085
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -741,9 +721,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 6
     m_ConditionEvent: weaponType
     m_EventTreshold: 1
-  - m_ConditionMode: 1
-    m_ConditionEvent: isWalking
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1834213872939900673}
   m_Solo: 0
@@ -894,9 +871,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 6
     m_ConditionEvent: weaponType
     m_EventTreshold: 1
-  - m_ConditionMode: 1
-    m_ConditionEvent: idle
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5801904893699562903}
   m_Solo: 0
@@ -926,11 +900,10 @@ AnimatorStateMachine:
     m_Position: {x: 440, y: 20, z: 0}
   - serializedVersion: 1
     m_StateMachine: {fileID: 6060937537947777570}
-    m_Position: {x: 450, y: 90, z: 0}
+    m_Position: {x: 440, y: 90, z: 0}
   m_AnyStateTransitions: []
   m_EntryTransitions:
   - {fileID: 2890569839368112733}
-  - {fileID: 568090623621329201}
   m_StateMachineTransitions:
   - first: {fileID: -8515813216626024405}
     second:
@@ -979,9 +952,6 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 6
     m_ConditionEvent: weaponType
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: idle
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1760219329766283772}

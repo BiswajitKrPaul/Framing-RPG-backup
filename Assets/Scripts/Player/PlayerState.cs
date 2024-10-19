@@ -23,13 +23,13 @@ namespace Player {
         }
 
         public virtual void Process() {
-            Player.PlayerAnimator.SetInteger(PlayerConstants.WeaponType, (int)Player.PlayerCurrentWeapon);
-            if (XInput == 0 && YInput == 0) return;
-            Player.PlayerAnimator.SetFloat(PlayerConstants.XVelocity, XInput);
-            Player.PlayerAnimator.SetFloat(PlayerConstants.YVelocity, YInput);
+            Player.PlayerAnimator.SetInteger(PlayerConstants.WeaponType, (int)Player.playerCurrentWeapon);
         }
 
         public virtual void PhysicsProcess() {
+            if (XInput == 0 && YInput == 0) return;
+            Player.PlayerAnimator.SetFloat(PlayerConstants.XVelocity, XInput);
+            Player.PlayerAnimator.SetFloat(PlayerConstants.YVelocity, YInput);
         }
 
         public virtual void Exit() {

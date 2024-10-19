@@ -45,8 +45,7 @@ namespace Player {
 
         #region Weapons
 
-        public WeaponType PlayerCurrentWeapon { get; private set; } = WeaponType.None;
-        private bool _hasCurrentWeapon = true;
+        public WeaponType playerCurrentWeapon = WeaponType.None;
 
         #endregion
 
@@ -62,9 +61,16 @@ namespace Player {
 
         private void OnWeaponEquippedPerformed(InputAction.CallbackContext context) {
             if (!context.performed) return;
-            _hasCurrentWeapon = !_hasCurrentWeapon;
-            PlayerCurrentWeapon = _hasCurrentWeapon ? WeaponType.None : WeaponType.Hoe;
-            // animator.SetInteger(PlayerConstants.WeaponType, (int)PlayerCurrentWeapon);
+            SetWeaponTYpe(context);
+        }
+
+        private void SetWeaponTYpe(InputAction.CallbackContext context) {
+            playerCurrentWeapon = context.control.displayName.ToLower() switch {
+                "1" => WeaponType.Hoe,
+                "2" => WeaponType.None,
+                "x" => WeaponType.None,
+                _ => WeaponType.None
+            };
         }
 
         private void Start() {
@@ -73,8 +79,9 @@ namespace Player {
 
 
         private void OnAttackOnPerformed(InputAction.CallbackContext context) {
-            if (context.performed)
-                IsAttacking = !IsAttacking;
+            if (!context.performed) return;
+            IsAttacking = !IsAttacking;
+            Debug.Log("Attacking");
         }
 
         private void Update() {
