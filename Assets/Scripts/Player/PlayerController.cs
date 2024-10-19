@@ -86,11 +86,11 @@ namespace Player {
 
         private void Update() {
             stateMachine.CurrentState.Process();
+            GetInputs();
         }
 
         private void FixedUpdate() {
             stateMachine.CurrentState.PhysicsProcess();
-            GetInputs();
         }
 
 
