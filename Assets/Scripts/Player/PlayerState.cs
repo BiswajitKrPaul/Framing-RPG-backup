@@ -23,7 +23,6 @@ namespace Player {
         }
 
         public virtual void Process() {
-            Player.PlayerAnimator.SetInteger(PlayerConstants.WeaponType, (int)Player.playerCurrentWeapon);
         }
 
         public virtual void PhysicsProcess() {

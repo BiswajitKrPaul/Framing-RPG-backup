@@ -61,16 +61,17 @@ namespace Player {
 
         private void OnWeaponEquippedPerformed(InputAction.CallbackContext context) {
             if (!context.performed) return;
-            SetWeaponTYpe(context);
+            SetWeaponType(context);
         }
 
-        private void SetWeaponTYpe(InputAction.CallbackContext context) {
+        private void SetWeaponType(InputAction.CallbackContext context) {
             playerCurrentWeapon = context.control.displayName.ToLower() switch {
                 "1" => WeaponType.Hoe,
                 "2" => WeaponType.None,
                 "x" => WeaponType.None,
                 _ => WeaponType.None
             };
+            animator.SetInteger(PlayerConstants.WeaponType, (int)playerCurrentWeapon);
         }
 
         private void Start() {
@@ -86,11 +87,11 @@ namespace Player {
 
         private void Update() {
             stateMachine.CurrentState.Process();
-            GetInputs();
         }
 
         private void FixedUpdate() {
             stateMachine.CurrentState.PhysicsProcess();
+            GetInputs();
         }
 
 
