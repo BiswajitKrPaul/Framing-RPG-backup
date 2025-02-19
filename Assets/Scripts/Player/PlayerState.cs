@@ -1,11 +1,10 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Player {
     public class PlayerState : MonoBehaviour {
+        private string _animName;
         protected PlayerController Player;
         protected StateMachine StateMachine;
-        private string _animName;
 
         protected Vector2 PlayerVelocity => Player.PlayerRigidBody2D.velocity;
         protected float XInput => Player.XInput;
@@ -26,7 +25,7 @@ namespace Player {
         }
 
         public virtual void PhysicsProcess() {
-            if (XInput == 0 && YInput == 0) return;
+            if (Mathf.Abs(XInput) == 0 && Mathf.Abs(YInput) == 0) return;
             Player.PlayerAnimator.SetFloat(PlayerConstants.XVelocity, XInput);
             Player.PlayerAnimator.SetFloat(PlayerConstants.YVelocity, YInput);
         }
